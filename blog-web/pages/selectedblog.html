@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{ docname }</title>
+</head>
+<body>
+    <div  style=" padding-top: 20px; box-shadow: 2px 1px 2px #eee; padding-bottom: 20px;" class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0"  style="margin-bottom: -5%;">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Blog Website</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Express to the world.</p>
+          </div>
+          <div style="padding-top: 25px; padding-right: 15px; display: flex; justify-content: space-between; margin-bottom: -10%;">
+            <button id="createBlog"
+            style=" margin: 5%;"
+                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        Write a blog
+                    </button>
+            <button id="logout"
+            style=" margin: 5%;"
+                    class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    Logout
+            </button>
+          </div>
+          <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3" style="display:flex; justify-content: center; margin-left:20%; margin-right:20%; ">
+            
+          </div>
+        </div>
+      </div>
+      { readmore }
+      <script>
+        document.getElementById('logout').addEventListener('click', () => {
+            window.location.href = '/logout';
+        })
+        document.getElementById('createBlog').addEventListener('click', () => {
+            window.location.href = '/createBlog';
+        });
+      </script>
+</body>
+</html>
